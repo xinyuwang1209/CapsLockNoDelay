@@ -45,5 +45,5 @@ print('Completed!')
 print('Save and reload keyboard configurations: ', end='')
 cmd = ['xkbcomp', '-w', '0', 'xkbmap', DISPLAY]
 subprocess.run(cmd, stdout=subprocess.PIPE)
-# os.remove('xkbmap')
+os.remove('xkbmap')
 print('Completed!')
